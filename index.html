@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pathfinder 2e Character Sheet</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<h2>Pathfinder 2e Character Sheet</h2>
+<form id="characterSheet">
+    <label for="characterName">Character Name:</label>
+    <input type="text" id="characterName" name="characterName">
+    
+    <label for="class">Class:</label>
+    <input type="text" id="class" name="class">
+    
+    <label for="level">Level:</label>
+    <input type="number" id="level" name="level" min="1" max="20">
+    
+    <label for="hitPoints">Hit Points:</label>
+    <input type="number" id="hitPoints" name="hitPoints" min="0">
+    
+    <label for="armorClass">Armor Class:</label>
+    <input type="number" id="armorClass" name="armorClass" min="0">
+    
+    <label for="speed">Speed:</label>
+    <input type="number" id="speed" name="speed" min="0">
+    
+    <button type="submit">Save</button>
+</form>
+
+<div id="output"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
